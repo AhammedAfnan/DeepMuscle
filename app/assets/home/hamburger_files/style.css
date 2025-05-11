@@ -1,0 +1,16 @@
+/* .birdchime-hide-node {display: none }.birdchime-disable-node { cursor: not-allowed;pointer-events: none;  background-color:#ffffff;}button.birdchime-disable-node {background-image: none;border: none;box-shadow: none;opacity: 0.4;background-color: red;}button#checkout, button[name="checkout"], a[href="/checkout"] {pointer-events: none;opacity: 0.4;}.shopify-payment-button {display: none !important } */
+.collection .grid__item:has(a[href*="partial-payment"]) {
+  display: none;
+}
+.grid-view-item:has(
+    .grid-view-item__title:first-child:matches(
+        :first-letter,
+        ::before
+      ):contains("Partial Payment")
+  ) {
+  display: none !important;
+}
+
+.grid-view-item:has(.grid-view-item__title[data-title^="Partial Payment"]) {
+  display: none !important;
+}
