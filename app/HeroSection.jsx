@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
-import heroImage from '../../assets/home/banner1.webp'
-import heroImage2 from '../../assets/home/banner3.webp'
+import heroImage from './assets/home/banner1.webp'
+import heroImage2 from './assets/home/banner3.webp'
 
 export default function HeroSection() {
   return (

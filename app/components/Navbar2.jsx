@@ -15,11 +15,11 @@ export default function Navbar2() {
 
       {/* Center - Nav Items */}
       <div className="">
-        <ul className="oswald flex gap-6 text-white font-semibold text-[20px]">
-          <li className="cursor-pointer">Home</li>
-          <li className="cursor-pointer">Shop</li>
-          <li className="cursor-pointer">About Us</li>
-          <li className="cursor-pointer">Contact Us</li>
+        <ul className="flex gap-6 text-white font-semibold text-[20px]">
+          <li className="teko cursor-pointer">Home</li>
+          <li className="font-teko cursor-pointer">Shop</li>
+          <li className="font-reko cursor-pointer">About Us</li>
+          <li className="font-teko cursor-pointer">Contact Us</li>
         </ul>
       </div>
 

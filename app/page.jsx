@@ -1,14 +1,19 @@
 import React from 'react'
-import Navbar from './components/Navbar'
-import HeroSection from './pages/home/HeroSection'
-import CardSection from './pages/home/CardSection'
+import HeroSection from './HeroSection'
+import CardSection from './CardSection'
+import Newsletter from './NewsLetter'
+import Footer from './components/Footer'
+import Navbar2 from './components/Navbar2'
 
 export default function page() {
   return (
     <>
-    <Navbar />
+    {/* <Navbar /> */}
+    <Navbar2 />
     <HeroSection />
-    <CardSection />
+    <CardSection /> 
+    <Newsletter />
+    <Footer />
     </>
   )
 }

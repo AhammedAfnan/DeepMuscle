@@ -7,9 +7,9 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import { Navigation, Pagination } from 'swiper/modules';
 import Image from 'next/image';
-import prod1 from '../../assets/home/prod4.webp';
-import prod2 from '../../assets/home/prod2.webp';
-import prod3 from '../../assets/home/prod3.webp';
+import prod1 from './assets/home/prod4.webp';
+import prod2 from './assets/home/prod2.webp';
+import prod3 from './assets/home/prod3.webp';
 
 const products = [
     {
