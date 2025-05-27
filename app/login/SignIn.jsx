@@ -24,47 +24,37 @@ const SocialButton = ({ icon, text }) => (
   </button>
 );
 
-export default function SignupPage() {
+export default function SignIn() {
   return (
     <div className="min-h-screen flex bg-white font-sans">
       <div className="w-1/2 bg-indigo-100 flex items-center justify-center">
-        {/* <Image src={Img1} alt="Sign Up Visual" className=" object-cover" /> */}
+        {/* <Image src={Img1} alt="Login Visual" className="object-cover" /> */}
       </div>
 
       {/* Right Side - Form */}
       <div className="w-1/2 flex flex-col justify-center px-36">
-        <h2 className="text-4xl font-semibold text-black mb-4">Sign Up</h2>
+        <h2 className="text-4xl font-semibold text-black mb-4">Log In</h2>
 
         <form className="space-y-4" autoComplete="off">
-          <div className="flex gap-4">
-            <InputField id="name" label="Name" placeholder="Enter your name" />
-            <InputField id="phone" label="Phone Number" placeholder="Enter your phone number" />
-          </div>
-
-          <InputField id="email" label="Email" type="email" placeholder="Enter your email" autoComplete="off" />
-          <InputField id="password" label="Password" type="password" placeholder="Enter your password" autoComplete="new-password"/>
-          <InputField id="confirmPassword" label="Confirm Password" type="password" placeholder="Re-enter your password" />
-
-          <div className="flex items-start gap-2">
-            <input type="checkbox" id="terms" className="mt-1" />
-            <label htmlFor="terms" className="text-xs text-black leading-snug w-[50%]">
-              I’ve read and agree with Terms of Service and Privacy Policy
-            </label>
-          </div>
+          <InputField id="email" label="Email" type="email" placeholder="Enter your email" />
+          <InputField id="password" label="Password" type="password" placeholder="Enter your password" />
 
           <button className="w-full bg-blue-500 text-white p-2 rounded-md hover:bg-blue-600 text-sm font-medium">
-            Sign up
+            Log in
           </button>
 
           <div className="text-center text-gray-500 text-sm">OR</div>
 
           <div className="flex gap-4">
-            <SocialButton icon={Google} text="Sign up with Google" />
-            <SocialButton icon={Facebook} text="Sign up with Facebook" />
+            <SocialButton icon={Google} text="Log in with Google" />
+            <SocialButton icon={Facebook} text="Log in with Facebook" />
           </div>
 
           <p className="text-center text-sm mt-4 text-black">
-            Already have an account? <a href="/login" className="text-indigo-600 font-medium">Log in</a>
+            Don't have an account?{" "}
+            <a href="/signup" className="text-indigo-600 font-medium">
+              Sign up
+            </a>
           </p>
         </form>
       </div>
